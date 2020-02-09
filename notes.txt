@@ -1,0 +1,11 @@
+Pages:
+    Homepage: Chris/Andrew
+        Notes --
+    E-commerce: Chris
+        Notes --
+    About Us: Chris
+        Notes --
+    Contact: Andrew
+        Notes --
+    Events: Andrew
+        Notes --
