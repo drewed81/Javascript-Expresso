@@ -1,8 +1,14 @@
 /* This CSS style page is for common styles accros different pages */
 
 /* #homePageContainer {
-    width: 100%;
-    height: 800px;
-    background: url("img/navbar-background.jpg") no-repeat center center fixed;
-    background-size: cover;
-  } */
+  width: 100%;
+  height: 800px;
+  background: url("img/navbar-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+
+
+} These items should be here, but for some reason not working*/

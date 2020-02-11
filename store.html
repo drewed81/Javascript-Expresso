@@ -10,10 +10,52 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Javascript Expresso Bar</title>
+
+  <style>
+    .navbarContainer {
+      width: 100%;
+    }
+
+    .nav-item {
+      font-size: 1.5rem;
+    }
+  </style>
+
 </head>
+
 <body>
   <!-- START HERE -->
-  
+  <div class="bg-dark navbarContainer">
+    <nav class="navbar navbar-expand-sm navbar-light mb-3">
+        <div class="col-4">
+          <a class="navbar-brand text-white float-left" href="index.html">
+            JavaScipt Xpresso <!-- Logo will go here and float left  -->
+          </a> 
+        </div>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="col-4">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white active" href="#">Shop</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white" href="events.html">Events</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-white" href="contactus.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </nav>
+</div>   
 
 
 
