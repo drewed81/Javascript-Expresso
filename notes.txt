@@ -9,3 +9,15 @@ Pages:
         Notes --
     Events: Andrew
         Notes --
+
+Coffee Flavor:
+1) React Dark
+2) Vanilla JavaScript
+3) Div and Smooth
+4) <The Dark Chocolate Component />
+5) Caramel Font Size
+6) The Decaf Prop
+7) JSX Special
+8) The Sweet Function
+9) Delicate and Reactive
+10) The Endless Loop
