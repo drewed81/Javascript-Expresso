@@ -33,6 +33,35 @@
   font-weight: bold;
 }
 
+/* Color classes */
+.jsx-black {
+  color: #040C0E;
+}
+
+.jsx-dark {
+  color: #132226;
+}
+
+.jsx-gray {
+  color: #525B56;
+}
+
+.jsx-coffee {
+  color: #BE906E;
+}
+
+.jsx-light {
+  color: #A4978E;
+}
+
+.jsx-bg-dark {
+  background-color: #132226;
+}
+
+.jsx-bg-gray {
+  background-color: #525B56;
+}
+
 /* Non-homepage Navbar Styles */
 .navbarContainer {
   width: 100%;

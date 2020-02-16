@@ -21,3 +21,17 @@ Coffee Flavor:
 8) The Sweet Function
 9) Delicate and Reactive
 10) The Endless Loop
+
+Color Pallet?  - #7 below also like #20
+https://visme.co/blog/color-combinations/
+#7
+Black:  #040C0E
+- class: jsx-black
+Dark: #132226
+- class: jsx-dark
+Gray: #525B56
+- class: jsx-gray
+Coffee: #BE906E
+- class: jsx-coffee
+Light: #A4978E
+- class- jsx-light

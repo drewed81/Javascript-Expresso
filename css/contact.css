@@ -1,1 +1,20 @@
 /* Styles for the Contact Page */
+
+
+.nav-pills > a.active {
+    background-color: #132226 !important;
+    color: #ffffff !important;
+}
+
+.nav-pills > a:hover {
+    color: #79888C !important;
+}
+  
+.nav-link-color {
+    color: #132226;
+}
+
+.jsx-btn {
+    background-color: #132226 !important;
+    color: #ffffff !important;
+}

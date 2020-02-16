@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
   <title>Contact Us</title>
 
   <style>
@@ -19,56 +20,164 @@
     .nav-item {
       font-size: 1.5rem;
     }
+
+    .contact-banner {
+      width: 100%;
+      height: 700px;
+      background: url("img/contactus-coffeeshop-unsplash.jpg") no-repeat center fixed;
+      background-size: cover;
+    }
   </style>
 
 </head>
 
-<body>
+<body class="jsx-bg-gray">
   <!-- Contact Us Page Navbar -->
-  <div class="bg-dark navbarContainer">
-    <nav class="navbar navbar-expand-sm navbar-light mb-3">
+  <div class="jsx-bg-dark navbarContainer">
+    <nav class="navbar navbar-expand-sm navbar-light">
       <div class="col-4">
         <div class="d-flex justify-content-center" style="width: 250px;">
-          <a class="navbar-brand text-white font-weight-bold logo-link" href="#" style="font-size: 1.6rem;">
+          <a class="navbar-brand text-white font-weight-bold logo-link" href="index.html" style="font-size: 1.6rem;">
             <!-- <img src="img/logo.jpg" alt="logo" style="border-radius: 15px;"> -->
             JavaScript Xpresso
           </a> 
         </div>
-
       </div>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="col-4">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item mx-3">
-                <div class="nLink-container d-flex justify-content-center">
-                  <a class="nav-link text-white link font-weight-bold" href="store.html">Shop</a>
-                </div> 
-              </li>
-              <li class="nav-item mx-3">
-                <div class="nLink-container d-flex justify-content-center">
-                  <a class="nav-link text-white link font-weight-bold" href="events.html">Events</a>
-                </div>
-              </li>
-              <li class="nav-item mx-3">
-                <div class="nLink-container d-flex justify-content-center">
-                  <a class="nav-link text-white link font-weight-bold" href="aboutus.html">About</a>
-                </div>
-              </li>
-              <li class="nav-item mx-3">
-                <div class="nLink-container d-flex justify-content-center">
-                  <a class="nav-link text-white link font-weight-bold active" href="contactus.html">Contact</a>
-                </div>  
-              </li>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="col-4">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-3">
+              <div class="nLink-container d-flex justify-content-center">
+                <a class="nav-link text-white link font-weight-bold" href="store.html">Shop</a>
+              </div> 
+            </li>
+            <li class="nav-item mx-3">
+              <div class="nLink-container d-flex justify-content-center">
+                <a class="nav-link text-white link font-weight-bold" href="events.html">Events</a>
+              </div>
+            </li>
+            <li class="nav-item mx-3">
+              <div class="nLink-container d-flex justify-content-center">
+                <a class="nav-link text-white link font-weight-bold" href="aboutus.html">About</a>
+              </div>
+            </li>
+            <li class="nav-item mx-3">
+              <div class="nLink-container d-flex justify-content-center">
+                <a class="nav-link text-white link font-weight-bold active" href="contactus.html">Contact</a>
+              </div>  
+            </li>
           </ul>
         </div>
       </div>
-      <div class="col-4"></div>
-    </nav>
-</div>   
 
+      <div class="col-4"></div>
+
+    </nav>
+  </div>   
+  
+
+  <div class="container-fluid d-flex align-items-center justify-content-center contact-banner">
+    <div class="row text-white">
+        <h1 style="font-size:60px">Contact Us</h1>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row align-items-center" style="height:600px">
+      <!-- Pills/Tabs -->
+      <div class="col-sm-3">
+        <div class="nav flex-column nav-pills" id="pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link nav-link-color active" id="pills-message-tab" data-toggle="pill" role="tab" href="#pills-message" aria-controls="pills-message" aria-selected="true">Send us a message</a>
+          <a class="nav-link nav-link-color" id="pills-contact-tab" data-toggle="pill" role="tab" href="#pills-contact" aria-controls="pills-message" aria-selected="false">Contact info</a>
+          <a class="nav-link nav-link-color" id="pills-location-tab" data-toggle="pill" role="tab" href="#pills-location" aria-controls="pills-location" aria-selected="false">Location</a>
+          <a class="nav-link nav-link-color" id="pills-social-tab" data-toggle="pill" role="tab" href="#pills-social" aria-controls="pills-social" aria-selected="false">Social</a>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Send Message Tab Content -->
+          <div class="tab-pane fade show active" id="pills-message" role="tab-panel" aria-labelledby="pills-message-tab">
+            <form>
+              <div class="col ml-3">
+                <!-- Name Input -->
+                <div class="form-group row">
+                  <label for="inputFirst" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputFirst" placeholder="First">
+                  </div>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputLast" placeholder="Last">
+                  </div>
+                </div>
+                <!-- Email Input -->
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <!-- Subject Input -->
+                <div class="form-group row">
+                  <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                  </div>
+                </div>
+                <!-- Message Input -->
+                <div class="form-group row">
+                  <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+                  <div class="col-sm-10">
+                    <textarea type="text" class="form-control" id="inputMessage" rows="8" placeholder="Type Message Here!"></textarea>
+                  </div>
+                </div>
+                <!-- Send Button -->
+                <div class="form-group row">
+                  <div class="offset-md-2 col-md-10">
+                      <button class="btn jsx-btn" type="submit">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Info Tab Content -->
+          <div class="tab-pane fade" id="pills-contact" role="tab-panel" aria-labelledby="pills-contact-tab">
+            <div class="row jsx-dark ml-3">
+              <div class="col-sm-6">
+                <h5>Our Address</h5>
+                <address>
+                  99 Coffee Cup Lane<br />
+                  Seattle, WA 98001<br />
+                  U.S.A.
+                </address>
+              </div>
+              <div class="col-sm-6">
+                  <a role="button" class="btn btn-link"><i class="fa fa-phone" href="tel:+18883334444"></i> 1-888-333-4444</a><br />
+                  <a role="button" class="btn btn-link"><i class="fa fa-envelope" href="mailto:contact@javascriptxpresso.com"></i> contact@javascriptxpresso.com</a>
+              </div>
+            </div>
+          </div>
+          <!-- Location Tab Content -->
+          <div class="tab-pane fade" id="pills-location" role="tab-panel" aria-labelledby="pills-location-tab">
+            <div class="row ml-3">
+
+            </div>
+          </div>
+          <!-- Social Tab Content -->
+          <div class="tab-pane fade" id="pills-social" role="tab-panel" aria-labelledby="pills-social-tab">
+            <div class="row ml-3">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
