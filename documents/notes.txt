@@ -21,6 +21,8 @@ Coffee Flavor:
 8) The Sweet Function
 9) Delicate and Reactive
 10) The Endless Loop
+11) Syntactic Sugar
+12) 
 
 Color Pallet?  - #7 below also like #20
 https://visme.co/blog/color-combinations/

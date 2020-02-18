@@ -1,1 +1,32 @@
 /* Styles for the About Page */
+
+#content-wrapper > .left-image {
+    width: 350px;
+    margin: 23px 40px 20px 0px;
+    float: left;
+    border: 1px solid #404040; 
+}
+
+#content-wrapper > .right-image {
+    width: 350px;
+    margin: 23px 40px 20px 0px;
+    float: right;
+    border: 1px solid #404040; 
+}
+
+#content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    #content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #content-wrapper img {
+        align-self: center;
+    }
+}
