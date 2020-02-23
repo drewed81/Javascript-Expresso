@@ -1,13 +1,14 @@
 /* Styles for the Store Page */
 
-/* .page-banner {
-    background: url('img/sustainable.jpg') no-repeat center center;
+/* Store Banner Styles */
+.page-banner {
+    background: url('/img/sustainable.jpg') no-repeat center center;
     background-size: cover;
     height: 500px;
-} */
+}
 
+/* Store Banner Styles */
 .card-img-top:hover {
-    /* margin-top: 0px; */
     position: relative;
     top: -10px;
     cursor: pointer;

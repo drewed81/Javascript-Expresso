@@ -6,6 +6,11 @@
   font-size: 1.5rem;
 }
 
+.navbarContainer {
+  width: 100%;
+}
+
+
 .navbar-brand {
   font-size: 1.5rem;
 }

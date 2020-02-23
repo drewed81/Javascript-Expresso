@@ -1,5 +1,36 @@
 /* Styles for the About Page */
 
+/* About-Us Banner Styles */
+  .page-banner {
+  background: url('/img/male-barista.jpg') no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  }
+
+  #banner-title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: inherit;
+    color: inherit;
+    
+  }
+
+  @media only screen and (max-width: 767px) {
+    #banner-title {
+    font-size: 3.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    h2.paragraph-heading {
+     text-align: center;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+
+/* About Us Content Styles */
 #content-wrapper > .left-image {
     width: 350px;
     margin: 23px 40px 20px 0px;
