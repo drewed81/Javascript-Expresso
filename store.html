@@ -61,7 +61,36 @@
       </div>
       <div class="col-4"></div>
     </nav>
-</div>  
+  </div>  
+
+  <div id="couponModal" class="modal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header jsx-bg-light">
+              <h5 class="modal-title">Sign up for our Newsletter and get a coupon for 10% off your next purchase.</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="fullName">Name</label>
+                    <input type="password" class="form-control form-control-sm" id="fullName" placeholder="Full Name">
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="Email">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="Email" placeholder="Email" >                          </div>                                                   
+                  </div>
+                <div class="form-row">
+                  <button type="submit" class="btn jsx-btn btn-sm ml-1">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Store Banner -->
 <div class="col page-banner">
@@ -89,7 +118,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-5">
-      <div class="card mx-4">
+      <div id="vanilla" class="card mx-4">
         <div class="container p-5" >
           <img class="card-img-top img-fluid" src="img/coffee-bag.PNG" alt="coffee-bag">
         </div>
@@ -101,7 +130,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-5">
-      <div class="card mx-4">
+      <div id="divAndSmooth" class="card mx-4">
         <div class="container p-5" >
           <img class="card-img-top img-fluid" src="img/coffee-bag.PNG" alt="coffee-bag">
         </div>
@@ -113,7 +142,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-5">
-      <div class="card mx-4">
+      <div id="darkChocolate" class="card mx-4">
         <div class="container p-5" >
           <img class="card-img-top img-fluid" src="img/coffee-bag.PNG" alt="coffee-bag">
         </div>
@@ -137,7 +166,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-5">
-      <div class="card mx-4">
+      <div id="theDecafProp" class="card mx-4">
         <div class="container p-5" >
           <img class="card-img-top img-fluid" src="img/coffee-bag.PNG" alt="coffee-bag">
         </div>
@@ -149,7 +178,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-5">
-      <div class="card mx-4">
+      <div id="JSXSpecial" class="card mx-4">
         <div class="container p-5" >
           <img class="card-img-top img-fluid" src="img/coffee-bag.PNG" alt="coffee-bag">
         </div>
@@ -273,6 +302,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="jsx-main.js"></script>
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());

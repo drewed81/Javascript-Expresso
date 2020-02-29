@@ -12,3 +12,7 @@
     width: 72%;
     background-color: rgba(0,0,0,.5);
 } 
+
+.carousel-inner > .carousel-item {
+  height: 400px;
+}

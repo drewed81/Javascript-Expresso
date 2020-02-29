@@ -1,1 +1,14 @@
 /* Styles for the Events Page */
+
+.event-content {
+    padding: 50px 0;
+    min-height: 200px; }
+
+.event-header {
+    border-bottom: 1px solid;
+    padding: 2px;
+}
+
+.event-img {
+    width: 50%;
+}
