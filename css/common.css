@@ -67,6 +67,27 @@
   background-color: #525B56;
 }
 
+.jsx-bg-light {
+  background-color: #A4978E;
+}
+
+.jsx-footer {
+  background-color: #132226;
+  margin-top: -18px !important;
+}
+
+.jsx-btn {
+  background-color: #132226 !important;
+  color: #ffffff !important;
+}
+
+.newsLetter {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: #A4978E;
+  color: #132226;
+}
+
 /* Non-homepage Navbar Styles */
 .navbarContainer {
   width: 100%;

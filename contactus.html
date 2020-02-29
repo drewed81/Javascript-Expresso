@@ -4,34 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha256-rFMLRbqAytD9ic/37Rnzr2Ycy/RlpxE5QH52h7VoIZo=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/contact.css">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/76ddaab3dc.js" crossorigin="anonymous"></script>
+
   <title>Contact Us</title>
 
   <style>
-    .navbarContainer {
-      width: 100%;
-    }
-
-    .nav-item {
-      font-size: 1.5rem;
-    }
-
-    .contact-banner {
-      width: 100%;
-      height: 700px;
-      background: url("img/contactus-coffeeshop-unsplash.jpg") no-repeat center fixed;
-      background-size: cover;
-    }
+    #contact-banner {
+    width: 100%;
+    height: 500px;
+    background: url("img/contactus-coffeeshop-unsplash.jpg") no-repeat center;
+    background-size: cover;
+  }
   </style>
 
 </head>
 
-<body class="jsx-bg-gray">
+<body>
   <!-- Contact Us Page Navbar -->
   <div class="jsx-bg-dark navbarContainer">
     <nav class="navbar navbar-expand-md navbar-light">
@@ -81,104 +76,157 @@
   </div>   
   
 
-  <div class="container-fluid d-flex align-items-center justify-content-center contact-banner">
+  <div id="contact-banner" class="container-fluid d-flex align-items-center justify-content-center">
     <div class="row text-white">
         <h1 style="font-size:60px">Contact Us</h1>
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="row align-items-center" style="height:600px">
-      <!-- Pills/Tabs -->
-      <div class="col-sm-3">
-        <div class="nav flex-column nav-pills" id="pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link nav-link-color active" id="pills-message-tab" data-toggle="pill" role="tab" href="#pills-message" aria-controls="pills-message" aria-selected="true">Send us a message</a>
-          <a class="nav-link nav-link-color" id="pills-contact-tab" data-toggle="pill" role="tab" href="#pills-contact" aria-controls="pills-message" aria-selected="false">Contact info</a>
-          <a class="nav-link nav-link-color" id="pills-location-tab" data-toggle="pill" role="tab" href="#pills-location" aria-controls="pills-location" aria-selected="false">Location</a>
-          <a class="nav-link nav-link-color" id="pills-social-tab" data-toggle="pill" role="tab" href="#pills-social" aria-controls="pills-social" aria-selected="false">Social</a>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header jsx-bg-light">
+            <h5 class="jsx-dark">Hours</h5>
+          </div>
+          <div class="card-body mt-2">
+            <h5>Monday - Thursday : 7 am - 6 pm</h5>
+            <h5>Friday & Saturday:  7 am - 9 pm </h5>
+            <h5>Sunday: 8 am - 6 pm</h5>
+            <div class="row mt-4">
+              <div class="col">
+                <img class="img-fluid img-thumbnail" src="img/chess300.jpg" alt="chessboard">
+              </div>
+              <div class="col">
+                <img class="img-fluid img-thumbnail" src="img/cap300.jpg" alt="coffee-cup">
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col">
+                <img class="img-fluid img-thumbnail" src="img/coffeeburlap300.jpg" alt="coffee-burlap-bag">
+              </div>
+              <div class="col">
+                <img class="img-fluid img-thumbnail" src="img/guitar300.jpg" alt="playing-guitar">
+              </div>
+            </div>  
+            
+            <p class="card-text mt-2">Check our events calendar to find out about live music, open mic, game nights, extended hours, and more!</p>
+            <a href="events.html" class="btn jsx-btn mt-1">Events</a>
+          </div>
         </div>
       </div>
-      <div class="col-sm-9">
-        <div class="tab-content" id="pills-tabContent">
-          <!-- Send Message Tab Content -->
-          <div class="tab-pane fade show active" id="pills-message" role="tab-panel" aria-labelledby="pills-message-tab">
-            <form>
-              <div class="col ml-3">
-                <!-- Name Input -->
-                <div class="form-group row">
-                  <label for="inputFirst" class="col-sm-2 col-form-label">Name</label>
-                  <div class="col-sm-5">
-                    <input type="text" class="form-control" id="inputFirst" placeholder="First">
-                  </div>
-                  <div class="col-sm-5">
-                    <input type="text" class="form-control" id="inputLast" placeholder="Last">
-                  </div>
-                </div>
-                <!-- Email Input -->
-                <div class="form-group row">
-                  <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                  </div>
-                </div>
-                <!-- Subject Input -->
-                <div class="form-group row">
-                  <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
-                  </div>
-                </div>
-                <!-- Message Input -->
-                <div class="form-group row">
-                  <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
-                  <div class="col-sm-10">
-                    <textarea type="text" class="form-control" id="inputMessage" rows="8" placeholder="Type Message Here!"></textarea>
-                  </div>
-                </div>
-                <!-- Send Button -->
-                <div class="form-group row">
-                  <div class="offset-md-2 col-md-10">
-                      <button class="btn jsx-btn" type="submit">Send</button>
-                  </div>
-                </div>
-              </div>
-            </form>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header jsx-bg-light">
+            <h5 class="jsk-dark">Our Shop</h5>
           </div>
-          <!-- Contact Info Tab Content -->
-          <div class="tab-pane fade" id="pills-contact" role="tab-panel" aria-labelledby="pills-contact-tab">
-            <div class="row jsx-dark ml-3">
-              <div class="col-sm-6">
-                <h5>Our Address</h5>
-                <address>
-                  99 Coffee Cup Lane<br />
-                  Seattle, WA 98001<br />
-                  U.S.A.
-                </address>
+          <div class="card-body">
+            <div class="map-responsive">
+              <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113153.17618707177!2d-82.56727139352023!3d27.59239004662019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x723b9783b5c791c1!2sCircle%20K!5e0!3m2!1sen!2sus!4v1582934237341!5m2!1sen!2sus" height="" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="row">
+              <div class="col-md-6 p-3">
+                <h5 class="card-text">Address</h5>
+                <p class="card-text">600 Coffee Cup Ln</br>Tampa Bay, FL 33333</p>
               </div>
-              <div class="col-sm-6">
-                  <a role="button" class="btn btn-link"><i class="fa fa-phone" href="tel:+18883334444"></i> 1-888-333-4444</a><br />
-                  <a role="button" class="btn btn-link"><i class="fa fa-envelope" href="mailto:contact@javascriptxpresso.com"></i> contact@javascriptxpresso.com</a>
+              <div class="col-md-6 p-3">
+                <h5 class="card-text">Phone</h5>
+                <p class="card-text">1-888-888-8888</p>
               </div>
             </div>
-          </div>
-          <!-- Location Tab Content -->
-          <div class="tab-pane fade" id="pills-location" role="tab-panel" aria-labelledby="pills-location-tab">
-            <div class="row ml-3">
-
-            </div>
-          </div>
-          <!-- Social Tab Content -->
-          <div class="tab-pane fade" id="pills-social" role="tab-panel" aria-labelledby="pills-social-tab">
-            <div class="row ml-3">
-
+            <div class="row">
+              <div class="col p-3">
+                <h5 class="card-text">Email</h5>
+                <p class="card-text">contact@javascriptxpresso.com</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <form>
+          <!-- Name Input -->
+          <h5>Get in Touch</h5>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFirst" class="col-form-label">First</label>
+              <input type="text" class="form-control" id="inputFirst" placeholder="First">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputLast" class="col-form-label">Last</label>
+              <input type="text" class="form-control" id="inputLast" placeholder="Last">
+            </div>
+          </div>
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="inputEmail" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+          <!-- Subject Input -->
+          <div class="form-group">
+            <label for="inputSubject" class="col-form-label">Subject</label>
+            <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+          </div>
+          <!-- Message Input -->
+          <div class="form-group">
+            <label for="inputMessage" class="col-form-label">Message</label>
+            <textarea type="text" class="form-control" id="inputMessage" rows="8" placeholder="Type Message Here!"></textarea>
+          </div>
+          <!-- Send Button -->
+          <div class="form-group">
+              <button class="btn jsx-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
+  <!--News Letter Signup-->
+  <div class="container-fluid newsLetter">
+    <form>
+      <div class="form-group row align-items-center justify-content-center p-4">
+        <div class="col-md-3">
+          <label for="newsLetterSignup" class="col-form-label"><Strong>Get the latest news from JSX!</Strong></label>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="newsLetterSignup" placeholder="Email Address">
+        </div>
+        <div class="col-md-1">
+          <button class="btn jsx-btn" type="submit">Join</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <footer class="jsx-footer">
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-sm-3 text-center p-3 my-auto">
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="index.html">Home</a></li>
+                    <li><a class="text-white" href="store.html">Shop</a></li>
+                    <li><a class="text-white" href="events.html">Events</a></li>
+                    <li><a class="text-white" href="aboutus.html">About</a></li>
+                    <li><a class="text-white" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 text-center p-3 my-auto">
+                <a class="btn btn-lg btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="col-sm-3 text-center p-3 my-auto">
+                <a role="button" class="btn btn-link text-white" href="tel:+18888888888"><i class="fa fa-phone"></i> 1-888-888-8888</a><br />
+                <a role="button" class="btn btn-link text-white" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            </div>
+       </div>
+    </div>
+  </footer>
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

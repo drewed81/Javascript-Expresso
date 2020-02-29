@@ -4,84 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha256-rFMLRbqAytD9ic/37Rnzr2Ycy/RlpxE5QH52h7VoIZo=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/homepage.css">
   
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/76ddaab3dc.js" crossorigin="anonymous"></script>
+
   <title>Javascript Xpresso Bar</title>
   
 </head>
 
 <body>
 <!-- Navbar -->
-<div id="homePageContainer">
-    <nav class="navbar navbar-expand-md navbar-light mb-3">
-        <div class="col-4">
-          <div class="d-flex justify-content-center" style="width: 250px;">
-            <a class="navbar-brand text-white font-weight-bold logo-link" href="#" style="font-size: 1.6rem;">
-              <!-- <img src="img/logo.jpg" alt="logo" style="border-radius: 15px;"> -->
-              JavaScript Xpresso
-            </a> 
+  <div id="homePageContainer">
+      <nav class="navbar navbar-expand-md navbar-light mb-3">
+          <div class="col-4">
+            <div class="d-flex justify-content-center" style="width: 250px;">
+              <a class="navbar-brand text-white font-weight-bold logo-link" href="#" style="font-size: 1.6rem;">
+                <!-- <img src="img/logo.jpg" alt="logo" style="border-radius: 15px;"> -->
+                JavaScript Xpresso
+              </a> 
+            </div>
+            
           </div>
-          
+            <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="col-md-4">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item mx-3">
+                    <div class="nLink-container d-flex justify-content-center">
+                      <a class="nav-link text-white link font-weight-bold" href="store.html">Shop</a>
+                    </div> 
+                  </li>
+                  <li class="nav-item mx-3">
+                    <div class="nLink-container d-flex justify-content-center">
+                      <a class="nav-link text-white link font-weight-bold" href="events.html">Events</a>
+                    </div>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <div class="nLink-container d-flex justify-content-center">
+                      <a class="nav-link text-white link font-weight-bold" href="aboutus.html">About</a>
+                    </div>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <div class="nLink-container d-flex justify-content-center">
+                      <a class="nav-link text-white link font-weight-bold" href="contactus.html">Contact</a>
+                    </div>  
+                  </li>
+              </ul>
+          </div>
         </div>
-          <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="col-md-4">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item mx-3">
-                  <div class="nLink-container d-flex justify-content-center">
-                    <a class="nav-link text-white link font-weight-bold" href="store.html">Shop</a>
-                  </div> 
-                </li>
-                <li class="nav-item mx-3">
-                  <div class="nLink-container d-flex justify-content-center">
-                    <a class="nav-link text-white link font-weight-bold" href="events.html">Events</a>
-                  </div>
-                </li>
-                <li class="nav-item mx-3">
-                  <div class="nLink-container d-flex justify-content-center">
-                    <a class="nav-link text-white link font-weight-bold" href="aboutus.html">About</a>
-                  </div>
-                </li>
-                <li class="nav-item mx-3">
-                  <div class="nLink-container d-flex justify-content-center">
-                    <a class="nav-link text-white link font-weight-bold" href="contactus.html">Contact</a>
-                  </div>  
-                </li>
-            </ul>
+        <div class="col-4">
+          <a class="ml-auto" href="#reserveForm">
+            <Button class="btn btn-info btn-lg" data-target="#couponModal" data-toggle="modal" id="couponModal">Test Modal</Button>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Homepage Banner -->
+      <div class="container d-flex align-items-center" style="height: 650px">
+        <div class="row w-100">
+          <div id="sale-container" class="container d-flex flex-column">
+            <h1 class="text-warning text-center display-3 font-weight-bold" style=>All Coffee 10% off!</h1>
+            <a href="store.html" class="nav-link text-info text-center font-weight-bold link" style="font-size: 3.5rem;">Find Your Roast!</a>
+          </div>
         </div>
       </div>
-      <div class="col-4"></div>
-    </nav>
+  </div> 
 
-    <!-- Homepage Banner -->
-    <div class="container d-flex align-items-center" style="height: 650px">
-      <div class="row w-100">
-        <div id="sale-container" class="container d-flex flex-column">
-          <h1 class="text-warning text-center display-3 font-weight-bold" style=>All Coffee 10% off!</h1>
-          <a href="store.html" class="nav-link text-info text-center font-weight-bold link" style="font-size: 3.5rem;">Find Your Roast!</a>
+  <!-- Coupon Code Pop-up -->
+  <div id="couponModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Sign up for our newsletter!</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
         </div>
       </div>
     </div>
-</div> 
+  </div>
+
+
+  <!-- Additional Content-->
 
 
 
-<!-- Additional Content-->
 
 
 
+  <!--Store Carousel-->
 
 
+  <!--News Letter Signup-->
+  <div class="container-fluid newsLetter">
+    <form>
+      <div class="form-group row align-items-center justify-content-center p-4">
+        <div class="col-md-3">
+          <label for="newsLetterSignup" class="col-form-label"><Strong>Get the latest news from JSX!</Strong></label>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="newsLetterSignup" placeholder="Email Address">
+        </div>
+        <div class="col-md-1">
+          <button class="btn jsx-btn" type="submit">Join</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
-<!--Store Carousel-->
-
+  <footer class="jsx-footer">
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-sm-3 text-center p-3 my-auto">
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="#">Home</a></li>
+                    <li><a class="text-white" href="store.html">Shop</a></li>
+                    <li><a class="text-white" href="events.html">Events</a></li>
+                    <li><a class="text-white" href="aboutus.html">About</a></li>
+                    <li><a class="text-white" href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 text-center p-3 my-auto">
+                <a class="btn btn-lg btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="col-sm-3 text-center p-3 my-auto">
+                <a role="button" class="btn btn-link text-white" href="tel:+18888888888"><i class="fa fa-phone"></i> 1-888-888-8888</a><br />
+                <a role="button" class="btn btn-link text-white" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            </div>
+       </div>
+    </div>
+  </footer>
 
 
 
